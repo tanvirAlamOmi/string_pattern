@@ -1,1 +1,3 @@
-# string_pattern
+stringLength function finds the length of the given text by incremting the count if the letter exists.
+
+findPattern function checks every single letter of the string untill the length of the string is not smaller than the pattern. in that checking we check if the string matches with pattern by checking is equal or not. if matches it increments the count and continue the loop. if the count matches with pattern then the pattern is found and continues to next letter untill we check all.

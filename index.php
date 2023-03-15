@@ -1,6 +1,6 @@
 <?php
 
-function my_strlen($str) {
+function stringLength($str) {
     $len = 0;
     while (isset($str[$len])) {
         $len++;
@@ -9,10 +9,10 @@ function my_strlen($str) {
 }
 
 
-function find_pattern($text, $pattern) {
+function findPattern($text, $pattern) {
     $count = 0;
-    $text_length = my_strlen($text);
-    $pattern_length = my_strlen($pattern);
+    $text_length = stringLength($text);
+    $pattern_length = stringLength($pattern);
 
     for ($i = 0; $i < $text_length - $pattern_length + 1; $i++) {
         $j = 0;
@@ -30,5 +30,5 @@ function find_pattern($text, $pattern) {
 $text = "tadadattaetadadadafa";
 $pattern = "dada";
 
-echo find_pattern($text, $pattern); // output: 3
+echo findPattern($text, $pattern);  
 ?>
